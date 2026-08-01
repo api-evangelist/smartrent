@@ -1,8 +1,31 @@
 aid: smartrent
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/smartrent.png
 name: SmartRent
-description: 'SmartRent is a company surfaced as a portfolio company of bain-capital-ventures, d1-capital,
-  fifth-wall and added to the API Evangelist network as a stub for enrichment. Sector: ai-apps. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: >-
+  SmartRent, Inc. (NYSE: SMRT), founded in 2017 and headquartered in Scottsdale,
+  Arizona, is a leading provider of smart home and smart property technology for
+  the multifamily and single-family rental industries. Its platform pairs smart
+  hardware — smart locks, thermostats, water/leak sensors, access control and
+  hubs (Alloy, Fusion) — with cloud-based SaaS for property operators to manage
+  connected devices at scale. Products span smart apartments, building and
+  common-area access control, asset protection and leak monitoring, parking
+  management, self-guided tours, Virtual Intercom (browser-based WebRTC entry),
+  and community/resident WiFi. SmartRent exposes a partner-gated REST API and a
+  Phoenix Sockets real-time API for integrations, but publishes no public
+  developer portal or OpenAPI; API credentials are provisioned on request via
+  api@smartrent.com. This profile was surfaced as a VC portfolio company and
+  enriched by the API Evangelist pipeline.
 url: https://raw.githubusercontent.com/api-evangelist/smartrent/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,10 +37,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-- Ai Apps
+- Smart Home
+- IoT
+- PropTech
+- Property Management
+- Multifamily
+- Access Control
+- Real Estate
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -27,3 +56,16 @@ maintainers:
 common:
 - type: Website
   url: https://smartrent.com/
+- type: GitHubOrganization
+  url: https://github.com/smartrent
+- type: DomainSecurity
+  url: security/smartrent-domain-security.yml
+- type: Packages
+  url: packages/smartrent-packages.yml
+- type: WellKnown
+  url: well-known/smartrent-well-known.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

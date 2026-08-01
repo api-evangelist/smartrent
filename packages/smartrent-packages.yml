@@ -1,0 +1,26 @@
+generated: '2026-07-21'
+method: searched
+source: https://pypi.org/project/smartrent-py/ ; https://github.com/doawoo/SmartRentEx
+note: >-
+  SmartRent publishes no official public API SDK. API access is partner-gated
+  and provisioned on request via api@smartrent.com. The libraries below are
+  community / unofficial clients that reverse-engineer SmartRent's resident REST
+  + Phoenix Sockets API; none are first-party (official: false). SmartRent's own
+  GitHub org (https://github.com/smartrent) publishes Elixir INFRASTRUCTURE
+  libraries (grizzly Z-Wave, tortoise311/jackalope MQTT, jeff OSDP, samly SAML,
+  sobelow, solicit) — internal tooling, not client SDKs for a public API.
+packages:
+  - language: python
+    registry: pypi
+    name: smartrent-py
+    url: https://pypi.org/project/smartrent-py/
+    install: pip install smartrent-py
+    official: false
+    description: Unofficial async Python client for SmartRent devices (locks, thermostats, leak sensors, switches).
+  - language: elixir
+    registry: github
+    name: SmartRentEx
+    url: https://github.com/doawoo/SmartRentEx
+    install: "{:smartrent_ex, github: \"doawoo/SmartRentEx\"}"
+    official: false
+    description: Unofficial community Elixir library to interact with SmartRent's API.
