@@ -2,11 +2,12 @@ generated: '2026-07-21'
 method: searched
 source: live probes of /.well-known/* on smartrent.com and candidate API/docs hosts
 host: https://smartrent.com
-note: >-
-  No .well-known discovery documents are published. The developer.smartrent.com,
-  api.smartrent.com and docs.smartrent.com hosts do not resolve (no public
-  developer surface). Absence is valid recorded data.
-documents:
+note: No .well-known discovery documents are published. The developer.smartrent.com, api.smartrent.com
+  and docs.smartrent.com hosts do not resolve (no public developer surface). Absence is valid recorded
+  data.
+hosts:
+- host: https://smartrent.com
+  documents:
   - path: /.well-known/security.txt
     status: 404
   - path: /.well-known/openid-configuration
@@ -17,3 +18,8 @@ documents:
     status: 404
   - path: /.well-known/ai-plugin.json
     status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
