@@ -57,7 +57,7 @@ tags:
 - Property Management
 - Multifamily
 - Access Control
-- Real-Estate
+- Real Estate
 tags_raw:
 - Company
 - Smart Home
@@ -67,6 +67,7 @@ tags_raw:
 - Multifamily
 - Access Control
 - Real Estate
+- Real-Estate
 apis: []
 maintainers:
 - FN: Kin Lane
