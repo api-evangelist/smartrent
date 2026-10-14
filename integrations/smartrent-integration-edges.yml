@@ -1,0 +1,23 @@
+generated: '2026-10-14'
+method: searched
+checked:
+- appfolio/integrations/appfolio-integration-edges.yml
+source:
+- appfolio/integrations/appfolio-integration-edges.yml
+edges:
+- partner_name: AppFolio (appfolio-stack)
+  partner: appfolio
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: appfolio-stack
+  evidence: https://www.appfolio.com/stack/marketplace
+  mirror_of: appfolio/integrations/appfolio-integration-edges.yml
+  apps: []
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Accounting
