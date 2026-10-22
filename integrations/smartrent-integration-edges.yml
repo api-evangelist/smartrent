@@ -2,6 +2,8 @@ generated: '2026-10-14'
 method: searched
 checked:
 - appfolio/integrations/appfolio-integration-edges.yml
+- https://analytics.home-assistant.io/custom_integrations.json
+- https://raw.githubusercontent.com/hacs/default/dee7a0eddd9644e8373be114cdb7818443014ba0/integration
 source:
 - appfolio/integrations/appfolio-integration-edges.yml
 edges:
@@ -21,3 +23,41 @@ edges:
   detected: '2026-10-14'
   detected_by: mirror-platform-listings.py
   category: Accounting
+- partner_name: Home Assistant Community Store (HACS)
+  partner: null
+  partner_match: register-name
+  type: marketplace
+  marketplace: HACS default repository
+  evidence: https://github.com/ZacheryThomas/homeassistant-smartrent
+  category: home-automation
+  contract_reference:
+    register: HACS default integration list (github.com/hacs/default, pinned commit) + HA analytics custom_integrations.json
+    standard: Home Assistant custom integration (HACS)
+    spec_file: null
+    role: hacs-community-integration
+    register_id: https://raw.githubusercontent.com/hacs/default/dee7a0eddd9644e8373be114cdb7818443014ba0/integration
+    pinned_commit: dee7a0eddd9644e8373be114cdb7818443014ba0
+    matched_by: register-name
+    match_note: register-name 'smartrent' = smartrent; no wikidata P856
+    integrations:
+    - domain: smartrent
+      name: SmartRent
+      repo: https://github.com/ZacheryThomas/homeassistant-smartrent
+      builder: ZacheryThomas
+      installs: 145
+      installs_band: 100-1k
+    max_installs: 145
+    installs_source: https://analytics.home-assistant.io/custom_integrations.json
+    signal_note: installs = HA's opt-in analytics count for the integration's domain on the read date (a floor,
+      opt-in only); per-integration context, never summed or counted as edges
+    detected_by: sweep-home-assistant-hacs-custom.py
+    detected: '2026-10-22'
+    registered_name: SmartRent
+    identity_source: register-name
+    identity_note: register gave only the name; exact normalised match to the repo's apis.yml name, one repo, Wikidata
+      P856 not contradicting (Kin 2026-10-20 decision 2)
+  detected_by: sweep-home-assistant-hacs-custom.py
+  first_seen: '2026-10-22'
+  channel: partner-built
+  relationship: connector-coverage
+  direction: partner-built
